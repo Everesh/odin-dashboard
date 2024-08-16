@@ -40,6 +40,7 @@
 
 body {
     font-family: 'Karla', 'FiraSans', monospace;
+    letter-spacing: -0.07rem; /* The default spacing of karla was off, hope it wont affect fallback fonts, tehe pero */
     min-height: 100vh;
 
     display: grid;
@@ -75,7 +76,7 @@ body > nav {
 .anchor > svg {
     width: 75px;
     height: 75px;
-    stroke: var(--surface-1);
+    stroke: transparent;
     fill: var(--surface-1);
 }
 
@@ -88,7 +89,7 @@ nav li {
     gap: 2rem;
     align-items: center;
     padding: 0.5rem 10%;
-    stroke: var(--surface-1);
+    stroke: transparent;
     fill: var(--surface-1);
 }
 
@@ -98,7 +99,6 @@ nav li:hover {
 
 nav li:active {
     color: var(--surface-0);
-    stroke: var(--surface-0);
     fill: var(--surface-0);
 }
 
