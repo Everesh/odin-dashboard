@@ -7,6 +7,27 @@
     list-style: none;
 }
 
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/Karla/Karla-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('./fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --surface-0: #C8C4AB;
     --surface-1: #EAE7D2;
@@ -15,4 +36,8 @@
     --tint-0: #E88E7D;
     --tint-1: #CB6D5D;
     --tint-2: #B55546;
+}
+
+body {
+    font-family: 'Karla', 'FiraSans', monospace;
 }
