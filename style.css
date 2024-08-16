@@ -6,3 +6,13 @@
     text-decoration: none;
     list-style: none;
 }
+
+:root {
+    --surface-0: #C8C4AB;
+    --surface-1: #EAE7D2;
+    --surface-2: #FDFBED;
+
+    --tint-0: #E88E7D;
+    --tint-1: #CB6D5D;
+    --tint-2: #B55546;
+}
