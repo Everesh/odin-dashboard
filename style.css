@@ -8,15 +8,15 @@
 }
 
 @font-face {
-    font-family: 'Karla';
-    src: url('./fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Josefin';
+    src: url('./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Karla';
-    src: url('./fonts/Karla/Karla-Italic-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Josefin';
+    src: url('./fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -39,8 +39,7 @@
 }
 
 body {
-    font-family: 'Karla', 'FiraSans', monospace;
-    letter-spacing: -0.07rem; /* The default spacing of karla was off, hope it wont affect fallback fonts, tehe pero */
+    font-family: 'Josefin', 'FiraSans', monospace;
     min-height: 100vh;
 
     display: grid;
