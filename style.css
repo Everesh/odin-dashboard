@@ -36,6 +36,10 @@
     --tint-0: #E88E7D;
     --tint-1: #CB6D5D;
     --tint-2: #B55546;
+
+    --dark-0: #777168;
+    --dark-1: #635D55;
+    --dark-2: #544E47;
 }
 
 body {
@@ -106,9 +110,120 @@ nav svg {
     height: 27px;
 }
 
+/* Header */
+
 header {
     background-color: var(--surface-2);
+    color: var(--dark-2);
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+header > * {
+    width: 100%;
+}
+
+header svg {
+    width: 30px;
+    height: 30px;
+
+    fill: var(--dark-1);
+}
+
+header svg:hover {
+    fill: var(--dark-0);
+}
+
+header svg:active {
+    fill: var(--dark-2);
+}
+
+
+.flex_apart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flex_apart > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pad {
+    padding: 0.5rem 4rem;
+}
+
+#small_profile_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#big_profile_pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header form {
+    min-width: 450px;
+}
+
+header form > input[type="text"] {
+    height: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--surface-1);
+    padding: 0 2rem;
+    color: var(--dark-1);
+    font-family: 'Josefin', 'FiraSans', monospace;
+    font-size: 1.2rem;
+
+    width: max(400px, 50vw);
+}
+
+#big_profile_pic + div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#big_profile_pic + div > p:first-child {
+    font-size: 14px;
+}
+
+.button_field > button {
+    width: 120px;
+    height: 35px;
+    border-radius: 35px;
+    border: none;
+    font-family: 'Josefin', 'FiraSans', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--surface-2);
+    background-color: var(--tint-1);
+}
+
+.button_field > button:hover {
+    background-color: var(--tint-2);
+}
+
+.button_field > button:active {
+    color: var(--surface-0)
+}
+
+/* Main */
 
 main {
     background-color: var(--surface-1);
