@@ -189,7 +189,7 @@ header form > input[type="text"] {
     font-family: 'Josefin', 'FiraSans', monospace;
     font-size: 1.2rem;
 
-    width: max(400px, 50vw);
+    width: max(400px, 40vw);
 }
 
 #big_profile_pic + div {
@@ -228,10 +228,12 @@ header form > input[type="text"] {
 main {
     background-color: var(--surface-1);
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 350px;
     gap: 1rem;
     padding: 1rem;
     color: var(--dark-2);
+    align-items: start;
+    justify-content: start;
 }
 
 .title {
@@ -252,7 +254,7 @@ main {
 
 .card {
     background-color: var(--surface-2);
-    padding: 1rem;
+    padding: 1.05rem;
     border-radius: 9px;
     border-left: 9px solid var(--tint-1);
 
@@ -272,4 +274,65 @@ main {
     width: 35px;
     height: 35px;
     fill: var(--dark-2);
+}
+
+.asside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.asside .title {
+    height: 25px;
+    font-weight: bold;
+}
+
+.announcements,
+.trending {
+    background-color: var(--surface-2);
+    padding: 1rem 2rem;
+    border-radius: 9px;
+}
+
+.announcements > div {
+    border-bottom: solid 1px var(--dark-1);
+    padding: 1rem 0;
+}
+
+.announcements > div:last-child {
+    border: none;
+}
+
+.announcements p {
+    font-size: 15px;
+}
+
+.trending > div {
+    padding: 1rem 0;
+}
+
+.trending .fake_img {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--tint-2);
+    color: var(--surface-2);
+    font-size: 15px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending > div {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.trending > div h4 + p {
+    color: var(--dark-0);
 }
